@@ -22,20 +22,50 @@
         <title>Frontend Mentor | Intro section with dropdown navigation</title>
     </head>
     <body>
-    
-        <main class="main-container">
-            <header class="header-container">
-                <img src="./images/logo.svg" alt="Snap logo" class="logo-image">
-                <img src="./images/icon-menu.svg" alt="Menu icon">            
-            </header>
-        
-        
+        <header class="header-container">
+            <img src="./images/logo.svg" alt="Snap logo" class="logo-image" />
+            <img src="./images/icon-menu.svg" alt="Menu icon" class="mobile" />
+            <nav class="nav-bar desktop">
+                <ul>
+                    <li><a href="#">Features <img src="./images/icon-arrow-down.svg" alt="arrow down"></a></li>
+                    <li><a href="#">Company <img src="./images/icon-arrow-down.svg" alt="arrow down"></a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+            
+            <div class="user-actions desktop">
+                <button class="btn btn-login">Login</button>
+                <button class="btn btn-signUp">Register</button>
+            </div>
+        </header>
+
+        <main class="content-container">
+            <section class="image-section">
+                <!-- <img
+                    src="./images/image-hero-mobile.png"
+                    srcset="
+                        ./images/image-hero-mobile.png 750w,
+                        ./images/image-hero-desktop.png 920w
+                    "
+                    alt="Main image hero"
+                /> -->
+                <img
+                    src="./images/image-hero-desktop.png"
+                    alt="main image hero"
+                    class="desktop"
+                />
+                <img
+                    src="./images/image-hero-mobile.png"
+                    alt="main image hero"
+                    class="mobile"
+                />
+            </section>
         </main>
-    
-    
-        Features Company Careers About Login Register Make remote work Get your
-        team in sync, no matter your location. Streamline processes, create team
-        rituals, and watch productivity soar. Learn more
+
+        Make remote work Get your team in sync, no matter your
+        location. Streamline processes, create team rituals, and watch
+        productivity soar. Learn more
 
         <div class="attribution">
             Challenge by
