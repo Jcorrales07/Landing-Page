@@ -155,6 +155,33 @@ body {
     
     .content-container {
         display: block;
+        width: 100%;
+    }
+    
+    .info-section {
+        margin-top: var(--Margin-Bottom);
+        align-items: center;
+        text-align: center;
+    }
+    
+    .info-section p {
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+    
+    .info-section .main-title {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    
+    .btn-learn-more {
+        width: 27%;
+        padding: 1rem;
+        margin-bottom: var(--Margin-Bottom);
+    }
+    
+    .sponsors {
+        width: 90%;
     }
 
     .mobile {
