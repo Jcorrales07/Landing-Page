@@ -152,6 +152,10 @@ body {
     .header-container {
         margin-bottom: 1rem;
     }
+    
+    .content-container {
+        display: block;
+    }
 
     .mobile {
         display: block;
