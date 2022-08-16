@@ -153,6 +153,11 @@ body {
         margin-bottom: 1rem;
     }
     
+    .mobile-btn {
+        background-color: transparent;
+        border: none;
+    }
+    
     .content-container {
         display: block;
         width: 100%;
