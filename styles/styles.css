@@ -5,6 +5,7 @@
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+    text-decoration: none;
 }
 
 :root {
@@ -12,6 +13,8 @@
     --Medium-Gray: hsl(0, 0%, 41%);
     --Almost-Black: hsl(0, 0%, 8%);
     --Margin-Bottom: 5rem;
+    --Gap: 5rem;
+    --Font-size: 1.5rem;
 }
 
 * {
@@ -26,19 +29,19 @@ html {
 
 body {
     font-family: 'Epilogue', sans-serif;
-    font-family: 'Outfit', sans-serif;
+    font-size: 1.8rem;
     min-width: 375px;
     max-width: 1440px;
     margin: 0 auto;
-    /* width: 35rem; */
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 5rem;
+    gap: var(--Gap);
     padding: 1rem;
+    margin-bottom: var(--Margin-Bottom);
     /* border: 2px solid black; */
 }
 
@@ -48,7 +51,7 @@ body {
 
 .nav-bar {
     width: 40%;
-    font-size: 1.5rem;
+    font-size: var(--Font-size);
     flex-grow: 1;
     align-items: center;
 }
@@ -56,7 +59,7 @@ body {
 .header-container .nav-bar ul {
     display: flex;
     justify-content: flex-start;
-    gap: 3rem;
+    gap: var(--Gap);
     list-style-type: none;
 }
 
@@ -65,16 +68,91 @@ body {
     text-decoration: none;
 }
 
+.content-container {
+    /* border: 2px solid black; */
+    margin: 0 auto;
+    width: 85%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 14rem;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 9rem;
+    /* border: 2px solid black; */
+    /* padding: 3rem; */
+}
+
+.info-section .main-title {
+    font-size: 8.5rem;
+    margin-bottom: var(--Margin-Bottom);
+}
+
+.info-section p {
+    width: 80%;
+    margin-bottom: var(--Margin-Bottom);
+}
+
+.content-container {
+    margin-bottom: 8rem;
+}
+
 .content-container img {
     width: 100%;
+}
+
+.user-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--Gap);
+    flex-grow: 1;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: var(--Font-size);
+    padding: 1rem 2rem;
+}
+
+.btn-border {
+    border: 2px solid var(--Almost-Black);
+    border-radius: 1.5rem;
+}
+
+.btn-learn-more {
+    width: 27%;
+    padding: 1.5rem 2.5rem;
+    background-color: black;
+    color: var(--Almost-White);
+    border-radius: 1rem;
+    margin-bottom: 20rem;
+    border: 1px solid transparent;
+}
+
+.btn-learn-more:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+}
+
+.sponsors {
+    display: flex;
+    gap: 4rem;
 }
 
 .mobile {
     display: none;
 }
 
-
 @media screen and (max-width: 426px) {
+    .header-container {
+        margin-bottom: 1rem;
+    }
+
     .mobile {
         display: block;
     }
@@ -82,5 +160,4 @@ body {
     .desktop {
         display: none;
     }
-
 }
