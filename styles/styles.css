@@ -148,43 +148,84 @@ body {
     display: none;
 }
 
+.mobile-menu {
+    position: absolute;
+    top: 0%;
+    left: 29%;
+    width: 300px;
+    height: auto;
+    background-color: var(--Almost-White);
+}
+
+.mobile-menu .close-btn {
+    position: absolute;
+    right: 0%;
+    width: 8%;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    background-color: transparent;
+    border: none;
+}
+
+.options {
+    margin-top: var(--Margin-Bottom);
+    width: 80%;
+    margin: 5rem auto;
+}
+
+.option {
+    margin-bottom: 2rem;
+}
+
+.option-features img {
+    width: 8%;
+}
+
+.item {
+    margin-left: 3rem;
+}
+
+.invisible {
+    display: none;
+}
+
 @media screen and (max-width: 426px) {
     .header-container {
         margin-bottom: 1rem;
     }
-    
+
     .mobile-btn {
         background-color: transparent;
         border: none;
     }
-    
+
     .content-container {
         display: block;
         width: 100%;
     }
-    
+
     .info-section {
         margin-top: var(--Margin-Bottom);
         align-items: center;
         text-align: center;
     }
-    
+
     .info-section p {
         width: 90%;
         margin-bottom: 2rem;
     }
-    
+
     .info-section .main-title {
         font-size: 3rem;
         margin-bottom: 2rem;
     }
-    
+
     .btn-learn-more {
         width: 27%;
         padding: 1rem;
         margin-bottom: var(--Margin-Bottom);
     }
-    
+
     .sponsors {
         width: 90%;
     }
