@@ -149,6 +149,10 @@ body {
 }
 
 .mobile-menu {
+    display: none;
+}
+
+.mobile-menu {
     position: absolute;
     top: 0%;
     left: 29%;

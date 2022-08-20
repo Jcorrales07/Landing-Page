@@ -1,8 +1,15 @@
-const mobileMenu = document.querySelector(".mobile-btn");
-const closeMobileMenu = document.querySelector(".mobile-btn .close-btn")
+const btnMobileMenu = document.querySelector('.mobile-btn');
+const btnCloseMobileMenu = document.querySelector('.mobile-menu .close-btn');
+const divMobileMenu = document.querySelector('.content-container .mobile-menu');
 
+console.log(btnMobileMenu)
+console.log(btnCloseMobileMenu)
+console.log(divMobileMenu)
 
-mobileMenu.addEventListener('touchstart', () => {
-    
-})
-console.log(mobileMenu)
+btnMobileMenu.addEventListener('touchstart', () => {
+    divMobileMenu.style.display = 'block'
+});
+
+btnCloseMobileMenu.addEventListener('touchstart', () => {
+    divMobileMenu.style.display = 'none'
+});
