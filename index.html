@@ -2,16 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- displays site properly based on user's device -->
-
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./images/favicon-32x32.png"
-        />
-        <link rel="stylesheet" href="styles/styles.css" />
+        <link rel="stylesheet" href="./styles/styles.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -19,169 +12,130 @@
             rel="stylesheet"
         />
         <script src="./index.js" defer></script>
-
-        <title>Frontend Mentor | Intro section with dropdown navigation</title>
+        <title>Landing page</title>
     </head>
     <body>
-        <header class="header-container">
-            <img src="./images/logo.svg" alt="Snap logo" class="logo-image" />
-            <button class="mobile-btn mobile">
-                <img
-                    src="./images/icon-menu.svg"
-                    alt="Menu icon"
-                    class="mobile"
-                />
-            </button>
+        <header class="header">
+            <img
+                src="./images/logo.svg"
+                alt="Snap Logo"
+                class="header__logo-img"
+            />
 
-            <nav class="nav-bar desktop">
-                <ul>
-                    <li>
-                        <a href="#"
-                            >Features
+            <img
+                src="./images/icon-menu.svg"
+                alt="Menu btn"
+                class="menu-btn mobile-device"
+            />
+
+            <nav class="nav desktop-device">
+                <ul class="list">
+                    <li class="list__item">
+                        <div class="list__div">
+                            <a href="#" class="nav__link">Features</a>
                             <img
                                 src="./images/icon-arrow-down.svg"
-                                alt="arrow down"
-                        /></a>
+                                class="list__arrow"
+                            />
+                        </div>
                     </li>
-                    <li>
-                        <a href="#"
-                            >Company
+
+                    <li class="list__item">
+                        <div class="list__div">
+                            <a href="#" class="nav__link">Company</a>
                             <img
                                 src="./images/icon-arrow-down.svg"
-                                alt="arrow down"
-                        /></a>
+                                class="list__arrow"
+                            />
+                        </div>
                     </li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">About</a></li>
+
+                    <li class="list__item">
+                        <div class="list__div">
+                            <a href="#" class="nav__link">Careers</a>
+                        </div>
+                    </li>
+
+                    <li class="list__item">
+                        <div class="list__div">
+                            <a href="#" class="nav__link">About</a>
+                        </div>
+                    </li>
                 </ul>
             </nav>
 
-            <div class="user-actions desktop">
-                <button class="btn btn-login">Login</button>
-                <button class="btn btn-register btn-border">Register</button>
+            <div class="ubtns desktop-device">
+                <button class="ubtns--login">Login</button>
+                <button class="ubtns--register">Register</button>
             </div>
         </header>
-
-        <main class="content-container">
-            <section class="image-section">
-                <!-- <img
-                    src="./images/image-hero-mobile.png"
-                    srcset="
-                        ./images/image-hero-mobile.png 750w,
-                        ./images/image-hero-desktop.png 920w
-                    "
-                    alt="Main image hero"
-                /> -->
-                <img
-                    src="./images/image-hero-desktop.png"
-                    alt="main image hero"
-                    class="desktop"
-                />
-                <img
-                    src="./images/image-hero-mobile.png"
-                    alt="main image hero"
-                    class="mobile"
-                />
-            </section>
-
-            <section class="info-section">
-                <h1 class="main-title">Make remote work</h1>
-                <p>
-                    Get your team in sync, no matter your location. Streamline
-                    processes, create team rituals, and watch productivity soar.
-                </p>
-
-                <button class="btn btn-learn-more">Learn more</button>
-
-                <div class="sponsors">
-                    <div>
-                        <img
-                            src="./images/client-databiz.svg"
-                            alt=""
-                            srcset=""
-                        />
-                    </div>
-                    <div>
-                        <img
-                            src="./images/client-audiophile.svg"
-                            alt=""
-                            srcset=""
-                        />
-                    </div>
-                    <div>
-                        <img src="./images/client-meet.svg" alt="" srcset="" />
-                    </div>
-                    <div>
-                        <img src="./images/client-maker.svg" alt="" srcset="" />
-                    </div>
-                </div>
-            </section>
-
-            <div class="mobile mobile-menu">
-            
-                <button class="close-btn">
-                    <img src="./images/icon-close-menu.svg" alt="" />
-                </button>
-                
-                <div class="options">
-                    <div class="option-features">
-                    
-                        <p class="option"><a href="#">Features</a><img src="./images/icon-arrow-down.svg" alt=""></p>
-                        <div class="option features-options visible">
-                        
-                            <div class="item option">
-                                <img src="./images/icon-todo.svg" alt="" /><a
-                                    href="#"
-                                >Todo List</a>
-                            </div>
-                            <div class="item option">
-                                <img src="./images/icon-calendar.svg" alt="" /><a
-                                    href="#"
-                                >Calendar</a>
-                            </div>
-                            <div class="item option">
-                                <img src="./images/icon-reminders.svg" alt="" /><a
-                                    href="#"
-                                >Reminders</a>
-                            </div>
-                            <div class="item option">
-                                <img src="./images/icon-planning.svg" alt="" /><a
-                                    href="#"
-                                >Planning</a>
-                            </div>
-                        </div>
-                        
-                        <p class="option"><a href="#">Company</a><img src="./images/icon-arrow-down.svg" alt=""></p>
-                        
-                        
-                        <div class="option option-company visible">
-                            <div class="item option"><a href="#">History</a></div>
-                            <div class="item option"><a href="#">Our Team</a></div>
-                            <div class="item option"><a href="#">Blog</a></div>
-                        </div>
-                        
-                        <p class="option"><a href="#">Careers</a></p>
-                        <p class="option"><a href="#">About</a></p>
-                        
-                        <div class="div-btns">
-                            <button class="btn btn-login">Login</button>
-                            <button class="btn btn-register btn-border">Register</button>
-                        </div>
-                    </div>
-                    
-                </div>
-                
-            </div>
-        </main>
-
-        <div class="attribution">
-            Challenge by
-            <a
-                href="https://www.frontendmentor.io?ref=challenge"
-                target="_blank"
-                >Frontend Mentor</a
-            >. Coded by
-            <a href="https://www.instagram.com/jcorrales07">Joe Corrales</a>.
-        </div>
     </body>
 </html>
+
+<!-- este es para mobil -->
+<!-- <nav class="nav">
+            <ul class="list">
+                <li class="list__item">
+                    <div class="list__div list__div--click">
+                        <a href="#" class="nav__link">Features</a>
+                        <img src="./images/icon-arrow-down.svg" class="list__arrow">
+                    </div>
+                    
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <img src="./images/icon-todo.svg" class="list__img">
+                            <a href="#" class="nav__link">Todo List</a>
+                        </li>
+                        
+                        <li class="list__inside">
+                            <img src="./images/icon-calendar.svg" class="list__img">
+                            <a href="#" class="nav__link">Calendar</a>
+                        </li>
+                        
+                        <li class="list__inside">
+                            <img src="./images/icon-reminders.svg" class="list__img">
+                            <a href="#" class="nav__link">Reminders</a>
+                        </li>
+                        
+                        <li class="list__inside">
+                            <img src="./images/icon-planning.svg" class="list__img">
+                            <a href="#" class="nav__link">Planning</a>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li class="list__item">
+                    <div class="list__div">
+                        <a href="#" class="nav__link">Company</a>
+                        <img src="./images/icon-arrow-down.svg" class="list__arrow">
+                    </div>
+                    
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="#" class="nav__link">History</a>
+                        </li>
+                        
+                        <li class="list__inside">
+                            <a href="#" class="nav__link">Our Team</a>
+                        </li>
+                        
+                        <li class="list__inside">
+                            <a href="#" class="nav__link">Blog</a>
+                        </li>
+                    </ul>
+                </li>
+                
+                
+                <li class="list__item">
+                    <div class="list__div">
+                        <a href="#" class="nav__link">Careers</a>
+                    </div>
+                </li>
+                
+                <li class="list__item">
+                    <div class="list__div">
+                        <a href="#" class="nav__link">About</a>
+                    </div>
+                </li>
+            </ul>
+        </nav> -->

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="styles/styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Outfit:wght@300;600&display=swap"
+            rel="stylesheet"
+        />
+        <script src="./index.js" defer></script>
+
+        <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    </head>
+    
+    <body>
+        <header class="header-container">
+            <img src="./images/logo.svg" alt="Snap logo" class="logo-image" />
+            <button class="mobile-btn mobile">
+                <img
+                    src="./images/icon-menu.svg"
+                    alt="Menu icon"
+                    class="mobile"
+                />
+            </button>
+
+            <nav class="nav-bar desktop">
+                <ul>
+                    <li>
+                        <a href="#"
+                            >Features
+                            <img
+                                src="./images/icon-arrow-down.svg"
+                                alt="arrow down"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            >Company
+                            <img
+                                src="./images/icon-arrow-down.svg"
+                                alt="arrow down"
+                        /></a>
+                    </li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+
+            <div class="user-actions desktop">
+                <button class="btn btn-login">Login</button>
+                <button class="btn btn-register btn-border">Register</button>
+            </div>
+        </header>
+
+        <main class="content-container">
+            <section class="image-section">
+                <img
+                    src="./images/image-hero-desktop.png"
+                    alt="main image hero"
+                    class="desktop"
+                />
+                <img
+                    src="./images/image-hero-mobile.png"
+                    alt="main image hero"
+                    class="mobile"
+                />
+            </section>
+
+            <section class="info-section">
+                <h1 class="main-title">Make remote work</h1>
+                <p>
+                    Get your team in sync, no matter your location. Streamline
+                    processes, create team rituals, and watch productivity soar.
+                </p>
+
+                <button class="btn btn-learn-more">Learn more</button>
+
+                <div class="sponsors">
+                    <div>
+                        <img
+                            src="./images/client-databiz.svg"
+                            alt=""
+                            srcset=""
+                        />
+                    </div>
+                    <div>
+                        <img
+                            src="./images/client-audiophile.svg"
+                            alt=""
+                            srcset=""
+                        />
+                    </div>
+                    <div>
+                        <img src="./images/client-meet.svg" alt="" srcset="" />
+                    </div>
+                    <div>
+                        <img src="./images/client-maker.svg" alt="" srcset="" />
+                    </div>
+                </div>
+            </section>
+
+            <div class="mobile mobile-menu">
+            
+                <button class="close-btn">
+                    <img src="./images/icon-close-menu.svg" alt="" />
+                </button>
+                
+                <div class="options">
+                    <div class="option-features">
+                    
+                        <p class="option"><a href="#">Features</a><img src="./images/icon-arrow-down.svg" alt=""></p>
+                        <div class="option features-options visible">
+                        
+                            <div class="item option">
+                                <img src="./images/icon-todo.svg" alt="" /><a
+                                    href="#"
+                                >Todo List</a>
+                            </div>
+                            <div class="item option">
+                                <img src="./images/icon-calendar.svg" alt="" /><a
+                                    href="#"
+                                >Calendar</a>
+                            </div>
+                            <div class="item option">
+                                <img src="./images/icon-reminders.svg" alt="" /><a
+                                    href="#"
+                                >Reminders</a>
+                            </div>
+                            <div class="item option">
+                                <img src="./images/icon-planning.svg" alt="" /><a
+                                    href="#"
+                                >Planning</a>
+                            </div>
+                        </div>
+                        
+                        <p class="option"><a href="#">Company</a><img src="./images/icon-arrow-down.svg" alt=""></p>
+                        
+                        
+                        <div class="option option-company visible">
+                            <div class="item option"><a href="#">History</a></div>
+                            <div class="item option"><a href="#">Our Team</a></div>
+                            <div class="item option"><a href="#">Blog</a></div>
+                        </div>
+                        
+                        <p class="option"><a href="#">Careers</a></p>
+                        <p class="option"><a href="#">About</a></p>
+                        
+                        <div class="div-btns">
+                            <button class="btn btn-login">Login</button>
+                            <button class="btn btn-register btn-border">Register</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </main>
+
+        <div class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by
+            <a href="https://www.instagram.com/jcorrales07">Joe Corrales</a>.
+        </div>
+    </body>
+</html>
