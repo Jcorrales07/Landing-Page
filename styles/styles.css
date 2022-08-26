@@ -63,7 +63,7 @@ body {
 .ubtns button {
     background-color: transparent;
     border: 2px solid transparent;
-    padding: 1rem 5rem;
+    padding: 1rem 3rem;
     font-size: 1.6rem;
     cursor: pointer;
 }
@@ -94,5 +94,12 @@ body {
 
     .desktop-device {
         display: block;
+    }
+    
+}
+
+@media screen and (max-width: 1350px) {
+    .nav .list {
+        margin-right: 0;
     }
 }
