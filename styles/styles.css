@@ -87,6 +87,14 @@ body {
     display: none;
 }
 
+/* .main-section {
+    border: 2px solid black;
+} */
+
+.main-section__img img {
+    width: 100%;
+}
+
 @media screen and (min-width: 1024px) {
     .mobile-device {
         display: none;
