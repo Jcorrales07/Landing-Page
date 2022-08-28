@@ -139,12 +139,18 @@ button {
 
 .main-section__clients {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .main-section__clients img {
-    width: 80%;
+    width: 100%;
+}
+
+@media screen and (max-width: 425px) {
+    .main-section__clients img {
+        width: 80%;
+    }
 }
 
 @media screen and (min-width: 1024px) {
