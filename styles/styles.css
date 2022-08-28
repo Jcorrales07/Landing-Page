@@ -41,7 +41,7 @@ body {
     justify-content: space-between;
     gap: 5rem;
     padding: 0.8rem;
-    margin-bottom: 6rem;
+    margin-bottom: 0rem;
     max-width: 1440px;
     font-size: 1.6rem;
 }
@@ -65,6 +65,13 @@ body {
 
 .nav .list a:hover {
     color: black;
+}
+
+.list__show {
+    list-style: none;
+    position: absolute;
+    height: 0;
+    overflow: hidden;
 }
 
 .ubtns {
