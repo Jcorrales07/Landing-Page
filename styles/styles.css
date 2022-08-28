@@ -41,7 +41,7 @@ body {
     justify-content: space-between;
     gap: 5rem;
     padding: 0.8rem;
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
     max-width: 1440px;
     font-size: 1.6rem;
 }
@@ -104,6 +104,7 @@ button {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    gap: 5rem;
 }
 
 .main-section__img {
@@ -126,7 +127,7 @@ button {
 
 .main-section__info p {
     width: 95%;
-    margin: auto;
+    display: inline-block;
     font-size: 2rem;
     margin-bottom: 2rem;
 }
@@ -148,12 +149,49 @@ button {
 }
 
 @media screen and (max-width: 425px) {
+    
+
     .main-section__clients img {
         width: 80%;
     }
 }
 
 @media screen and (min-width: 1024px) {
+    .main-section__container {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    .main-section__info {
+        text-align: left;
+    }
+    
+    .main-section__info h1 {
+        font-size: 9.7rem;
+        margin-top: 12rem;
+        margin-bottom: 6rem;
+    }
+    
+    .main-section__info p {
+        width: 80%;
+        line-height: 3rem;
+        margin-bottom: 6rem;
+    }
+    
+    .main-section__info button {
+        margin-bottom: 30%;
+    }
+    
+    .main-section__clients {
+        justify-content: space-between;
+    }
+    
+    .main-section__clients img {
+        width: 100%;
+    }
+    
     .mobile-device {
         display: none;
     }
@@ -166,5 +204,13 @@ button {
 @media screen and (max-width: 1350px) {
     .nav .list {
         margin-right: 0;
+    }
+    
+    .main-section__info h1 {
+        font-size: 5.7rem;
+    }
+    
+    .main-section__clients img {
+        width: 80%;
     }
 }
