@@ -2,16 +2,16 @@ const menuBtn = document.querySelector('.menu-btn');
 const closeMenuBtn = document.querySelector('.close-menu-btn');
 const nav = document.querySelector('.nav');
 
-console.log(nav);
-
-menuBtn.addEventListener('touchstart', () => {
-    // nav.classList.remove('mobile-device');
-    // nav.classList.add('desktop-device');
+const openMenu = () => {
     menuBtn.style.display = 'none'
     nav.style.display = 'flex';
-});
+}
 
-closeMenuBtn.addEventListener('touchstart', () => {
+const closeMenu = () => {
     menuBtn.style.display = 'block'
     nav.style.display = 'none';
-});
+}
+
+menuBtn.addEventListener('touchstart', openMenu);
+closeMenuBtn.addEventListener('touchstart', closeMenu);
+

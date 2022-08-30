@@ -30,16 +30,15 @@ body {
     text-align: center;
     margin-top: 5rem;
 }
+
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
-
 
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 5rem;
     padding: 0.8rem;
     margin-bottom: 0rem;
     max-width: 1440px;
@@ -52,19 +51,24 @@ body {
 
 .nav {
     display: flex;
-    /* position: absolute; */
     flex-direction: column;
-    /* justify-content: flex-end; */
-    align-items: flex-start;
+    align-items: flex-end;
+    padding: 0.8rem;
+    width: 45%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    border: 2px solid black;
 }
 
-/* .nav .list {
-    gap: 5rem;
-    display: flex;
+.nav img:first-child {
+    width: 3rem;
+    margin-top: 0.4rem;
+}
+
+.list {
     list-style: none;
-    justify-content: space-between;
-    margin-right: 50rem;
-} */
+}
 
 .nav .list a {
     text-decoration: none;
@@ -164,20 +168,24 @@ button {
 }
 
 @media screen and (max-width: 425px) {
-    
-
     .main-section__clients img {
         width: 80%;
     }
 }
 
 @media screen and (min-width: 1024px) {
+    .nav {
+        display: flex;
+        position: relative;
+        align-items: flex-start;
+        margin-right: 22rem;
+    }
+    
     .nav .list {
         gap: 5rem;
         display: flex;
         list-style: none;
         justify-content: space-between;
-        margin-right: 50rem;
     }
 
     .main-section__container {
@@ -186,35 +194,35 @@ button {
         display: flex;
         flex-direction: row-reverse;
     }
-    
+
     .main-section__info {
         text-align: left;
     }
-    
+
     .main-section__info h1 {
         font-size: 9.7rem;
         margin-top: 12rem;
         margin-bottom: 6rem;
     }
-    
+
     .main-section__info p {
         width: 80%;
         line-height: 3rem;
         margin-bottom: 6rem;
     }
-    
+
     .main-section__info button {
         margin-bottom: 30%;
     }
-    
+
     .main-section__clients {
         justify-content: space-between;
     }
-    
+
     .main-section__clients img {
         width: 100%;
     }
-    
+
     .mobile-device {
         display: none;
     }
@@ -225,14 +233,10 @@ button {
 }
 
 @media screen and (max-width: 1350px) {
-    .nav .list {
-        margin-right: 0;
-    }
-    
     .main-section__info h1 {
         font-size: 5.7rem;
     }
-    
+
     .main-section__clients img {
         width: 80%;
     }
