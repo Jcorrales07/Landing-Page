@@ -53,11 +53,12 @@ body {
     width: 60%;
     background-color: var(--Almost-White);
     height: 100vh;
+    padding: 0.8rem;
 }
 
 .nav img:first-child {
     width: 3rem;
-    margin-top: 1.4rem;
+    margin-top: 0.5rem;
     margin-left: 86%;
 }
 
