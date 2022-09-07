@@ -56,7 +56,7 @@ body {
     padding: 0.8rem;
 }
 
-.nav img:first-child {
+.nav .close-menu-btn {
     width: 3rem;
     margin-top: 0.5rem;
     margin-left: 86%;
@@ -87,7 +87,8 @@ body {
 
 .list__show {
     list-style: none;
-    position: absolute;
+    background-color: var(--Almost-White);
+    /* border: 2px solid black; */
     height: 0;
     overflow: hidden;
 }
@@ -200,6 +201,10 @@ button {
     
     .list__item {
         margin-bottom: 0;
+    }
+    
+    .list__show {
+        position: absolute;
     }
 
     .ubtns {
