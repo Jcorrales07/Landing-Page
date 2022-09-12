@@ -207,6 +207,11 @@ button {
 }
 
 @media screen and (min-width: 1024px) {
+    .header {
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+
     .nav {
         position: relative;
         background-color: transparent;
@@ -232,6 +237,7 @@ button {
         height: auto;
         padding: 0.5rem 1.5rem 1.5rem 1.5rem;
         border-radius: 2rem;
+        box-shadow: gray 0px 0px 20px;
     }
 
     .list__show--features {
@@ -246,6 +252,7 @@ button {
     
     .ubtns {
         width: auto;
+        margin-left: auto;
     }
 
     .main-section__container {

@@ -15,7 +15,7 @@ const menuExtension = (event = "click") => {
                 const listScrollHeight = listShow.scrollHeight;
                 arrow.classList.toggle('list__arrow--active');
 
-                listShow.style.height = (listaHeight === 0) ? `${listScrollHeight}px` : `0px`;
+                listShow.style.height = (listaHeight === 0) ? `auto` : `0px`;
                 listShow.style.padding = (listaHeight === 0) ? `0.5rem 1.5rem 1.5rem 1.5rem` : `0px`;
             });
         }
